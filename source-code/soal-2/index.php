@@ -14,7 +14,11 @@ if (isset($_POST['submit'])) {
     
     $invalid_text = [
         'Tahun',        
-        'TH'
+        'TH',
+        'tahun',
+        'TAHUN',
+        'Th',
+        'th'
     ];
     
     $city = str_replace($invalid_text, '', $city);

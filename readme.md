@@ -50,25 +50,25 @@ if (isset($_POST['submit'])) {
 
 ## Hasil program
 
-![alt text](/soal-2.png)
+![alt text](/soal-2.PNG)
 
 link demo : http://test-online-code.rf.gd/soal-2/
 
 # Soal 3 RDBMS  
 ### Tampilkan nama film dengan artis bayaran terendah dalam bentuk query  
 
-![alt text](/soal-3-1.png)
+![alt text](/soal-3-1.PNG)
 
 ### Tampilkan nama film dengan artis bayaran terendah dalam bentuk query  
 
-![alt text](/soal-3-2.png)
+![alt text](/soal-3-2.PNG)
 
 
 
 # Soal 4 REST API
 
 ### Daftar Pengguna
-![alt text](/soal-4-1.png)
+![alt text](/soal-4-1.PNG)
 
 ### Detail Pengguna
-![alt text](/soal-4-2.png)
+![alt text](/soal-4-2.PNG)
