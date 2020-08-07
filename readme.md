@@ -50,25 +50,25 @@ if (isset($_POST['submit'])) {
 
 ## Hasil program
 
-![alt text](images/soal-2.png "soal 2 - PHP Logic")
+![alt text](soal-2.png "soal 2 - PHP Logic")
 
 link demo : http://test-online-code.rf.gd/soal-2/
 
 # Soal 3 RDBMS  
 ### Tampilkan nama film dengan artis bayaran terendah dalam bentuk query  
 
-![alt text](images/soal-3-1.png "soal 3 - 1")
+![alt text](soal-3-1.png "soal 3 - 1")
 
 ### Tampilkan nama film dengan artis bayaran terendah dalam bentuk query  
 
-![alt text](images/soal-3-2.png "soal 3 - 2")
+![alt text](soal-3-2.png "soal 3 - 2")
 
 
 
 # Soal 4 REST API
 
 ### Daftar Pengguna
-![alt text](images/soal-4-1.png "soal 4 - 1")
+![alt text](soal-4-1.png "soal 4 - 1")
 
 ### Detail Pengguna
-![alt text](images/soal-4-2.png "soal 4 - 1")
+![alt text](soal-4-2.png "soal 4 - 1")
