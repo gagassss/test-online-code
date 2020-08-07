@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API</title>
+</head>
+<table class="list-user" border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>no</th>
+        <th>id</th>
+        <th>email</th>
+        <th>first name</th>
+        <th>last name</th>
+        <th>avatar</th>
+        <th>action</th>
+    </tr>
+</table>
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $.ajax({
+            type: 'get',
+            url: 'https://cors-anywhere.herokuapp.com/https://reqres.in/api/users?page=2',
+            success: function(response) {
+                $.each(response.data, function(key, data) {
+                    $('.list-user').append(`
+                        <tr>
+                            <td>${key}</td>
+                            <td>${data.id}</td>
+                            <td>${data.email}</td>
+                            <td>${data.first_name}</td>
+                            <td>${data.last_name}</td>
+                            <td><img src="${data.avatar}" width="120px"></td>
+                            <td><a href="detail.html?id=${data.id}"><button>Detail</button></a></td>
+                        </tr>               
+                    `);
+                })
+            }
+        })
+    </script>
+
+</body>
+</html>

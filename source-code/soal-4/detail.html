@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+</head>
+<body>
+
+    <div class="user-detail" hidden>
+        <img src="" width="150px" class="user-image">
+        <p>Full name : <span class="user-name"></span></p>
+        <p>Email : <span class="user-email"></span></p>
+        <p>Company : <span class="user-company"></span></p>
+        <p class="text"></p>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+    <script>
+        var url = new URL(window.location.href);
+        var id = url.searchParams.get("id");
+
+        $.ajax({
+            type: 'get',
+            url: `https://cors-anywhere.herokuapp.com/https://reqres.in/api/users/${id}`,
+            success: function(response) {
+                $('.user-detail').removeAttr('hidden');
+                $('.user-image').attr('src', response.data.avatar);
+                $('.user-name').text(response.data.first_name + ' ' +response.data.last_name);
+                $('.user-email').text(response.data.email);
+                $('.user-company').html(`<a href="${response.ad.url}">${response.ad.company}</a>`);
+                $('.text').text(response.ad.text);
+            }
+        })
+
+    </script>
+    
+</body>
+</html>
