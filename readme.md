@@ -59,7 +59,7 @@ link demo : http://test-online-code.rf.gd/soal-2/
 
 ![alt text](/soal-3-1.PNG)
 
-### Tampilkan nama film dengan artis bayaran terendah dalam bentuk query  
+### Tampilkan nama film yang dibintangi oleh artis yang huruf depannya 'j' dalam bentuk query  
 
 ![alt text](/soal-3-2.PNG)
 
